@@ -25,13 +25,13 @@ def split_data(df, target_col="column", test_size=0.2, random_state=42):
     X, y = df.drop(target_col, axis=1), df[target_col]
 
     # Split data into train and test sets (80/20 split)
-    X_train, X_t, y_train, y_t = train_test_split(
+    X_train, X_test, y_train, y_test = train_test_split(
         X, y, test_size=test_size, random_state=random_state
     )
 
     # Split remaining data 20%  into validation and test sets
     X_val, X_test, y_val, y_test = train_test_split(
-        X_t, y_t, test_size=0.2, random_state=random_state
+        X_train, y_train, test_size=0.25, random_state=random_state
     )
 
     return X_train, X_val, X_test, y_train, y_val, y_test
