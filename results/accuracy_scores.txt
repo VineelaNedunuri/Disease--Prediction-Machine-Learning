@@ -1,6 +1,1 @@
 
-dataset1_standard: F1 score - 0.69, accuracy-70.53% 
-dataset1_standard: F1 score - 0.67, accuracy-67.95% 
-dataset1_standard: F1 score - 0.68, accuracy-69.39% 
-dataset1_standard: F1 score - 0.69, accuracy-70.64% 
-dataset1_standard: F1 score - 0.67, accuracy-68.50% 
