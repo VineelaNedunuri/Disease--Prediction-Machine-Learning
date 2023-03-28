@@ -7,3 +7,11 @@ dataset1_minmax: F1 score - 0.68, accuracy-70.33%
 dataset1_minmax: F1 score - 0.68, accuracy-68.05% 
 dataset1_minmax: F1 score - 0.68, accuracy-69.71% 
 dataset1_minmax: F1 score - 0.69, accuracy-70.34% 
+dataset2_standard: F1 score - 0.71, accuracy-71.80% 
+dataset2_standard: F1 score - 0.65, accuracy-65.89% 
+dataset2_standard: F1 score - 0.71, accuracy-72.68% 
+dataset2_standard: F1 score - 0.72, accuracy-73.15% 
+dataset2_minax: F1 score - 0.68, accuracy-69.24% 
+dataset2_minax: F1 score - 0.60, accuracy-60.84% 
+dataset2_minax: F1 score - 0.71, accuracy-72.68% 
+dataset2_minax: F1 score - 0.72, accuracy-73.16% 
