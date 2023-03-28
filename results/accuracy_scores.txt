@@ -1,1 +1,2 @@
 
+dataset1_standard: F1 score - 0.68, accuracy-70.33% 

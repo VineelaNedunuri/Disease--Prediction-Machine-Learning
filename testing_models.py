@@ -30,7 +30,7 @@ def split_data(df, target_col="column", test_size=0.2, random_state=42):
     )
 
     # Split remaining data 20%  into validation and test sets
-    X_val, X_test, y_val, y_test = train_test_split(
+    X_train,X_val, y_train, y_val = train_test_split(
         X_train, y_train, test_size=0.25, random_state=random_state
     )
 
@@ -50,7 +50,7 @@ def scale_features(scale_type='standard'):
     pipe_KNN = Pipeline([("scaler", scaler), ("KNN", KNeighborsClassifier())])
     pipe_tree= Pipeline([("scaling", scaler), ("DT", DecisionTreeClassifier(random_state=42))])
     pipe_forest = Pipeline([("scaling", scaler), ("RF", RandomForestClassifier(random_state=42))])
-    pipe_Gaussian = Pipeline([("scaling", scaler), ("NB", GaussianNB())])
+    #pipe_Gaussian = Pipeline([("scaling", scaler), ("NB", GaussianNB())])
 
     # Return pipelines as a dictionary
     pipelines = {
@@ -58,7 +58,7 @@ def scale_features(scale_type='standard'):
         'K-Nearest Neighbor': pipe_KNN,
         'Decision Tree': pipe_tree,
         'Random Forest': pipe_forest,
-        'Gaussian Naive Bayes': pipe_Gaussian
+        #'Gaussian Naive Bayes': pipe_Gaussian
     }
 
     return pipelines
@@ -109,4 +109,5 @@ def evaluate_classification(model_name,y_val, y_pred):
     plt.title(f"{model_name} Confusion Matrix")
     plt.show()
     return cm
+    
 
