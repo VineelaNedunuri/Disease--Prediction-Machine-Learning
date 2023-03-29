@@ -3,7 +3,7 @@
 For disease prediction here we are considering a Cardiovascular Disease dataset from kaggle.
 The cardiovascular dataset is a collection of medical data related to patients with cardiovascular diseases and the data contains several features such as age, sex, blood pressure, cholesterol levels, glucose levels, smoking habits,weight, height and other details which causes risk of cardiovascular disease. This dataset consists of 70 000 records of patients data with 11 features and a target(cardio: Yes or No).
 
-1. [Introduction](#)
+1. [Introduction](#Introduction)
 2. [Exploratory Data Analysis (EDA)](#)
 3. [Choosing Models](#)
 4. [Prediction on Models](#)
